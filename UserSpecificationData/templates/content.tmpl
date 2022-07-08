@@ -1,0 +1,22 @@
+{{define "content" -}}
+<div class="container">
+   <h3 class="title"> Protection Jobs Data </h3>
+   <div class="products-container">
+{{range $index, $item :=.}}
+      <div class="product" data-name="p-{{$index}}">
+
+         <h2>{{$item.JobName}}</h3>
+         <h3>{{$item.JobBackuptime}}</h3>
+         <h3>{{$item.JBinc}}</h3>
+         <h3>{{$item.JobReptime}}</h3>
+         <h3>{{$item.JRinc}}</h3>
+         <h3>{{$item.JobArctime}}</h3>
+         <h3>{{$item.JAinc}}</h3>
+      </div>
+{{end}}
+   </div>
+</div>
+
+
+
+{{end}}
